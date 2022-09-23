@@ -13,6 +13,7 @@
 		5908089A28D862C5008E5032 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5908089828D862C5008E5032 /* Main.storyboard */; };
 		5908089C28D862C7008E5032 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5908089B28D862C7008E5032 /* Assets.xcassets */; };
 		5908089F28D862C7008E5032 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5908089D28D862C7008E5032 /* LaunchScreen.storyboard */; };
+		590E9E2228DDE2FF00B1518B /* FeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 590E9E2128DDE2FF00B1518B /* FeedCell.swift */; };
 		59990B8228D8AD3200D70E34 /* UploadVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59990B8128D8AD3200D70E34 /* UploadVC.swift */; };
 		59990B8428D8AE8200D70E34 /* SignInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59990B8328D8AE8200D70E34 /* SignInVC.swift */; };
 		F5DF1947D6178CD8205D154A /* Pods_InstagramCloneWithParse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65B433D79AA5260E085F5B94 /* Pods_InstagramCloneWithParse.framework */; };
@@ -27,6 +28,7 @@
 		5908089B28D862C7008E5032 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5908089E28D862C7008E5032 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		590808A028D862C7008E5032 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		590E9E2128DDE2FF00B1518B /* FeedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCell.swift; sourceTree = "<group>"; };
 		59990B8128D8AD3200D70E34 /* UploadVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadVC.swift; sourceTree = "<group>"; };
 		59990B8328D8AE8200D70E34 /* SignInVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInVC.swift; sourceTree = "<group>"; };
 		65B433D79AA5260E085F5B94 /* Pods_InstagramCloneWithParse.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_InstagramCloneWithParse.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -80,6 +82,7 @@
 				5908089428D862C5008E5032 /* SceneDelegate.swift */,
 				59990B8328D8AE8200D70E34 /* SignInVC.swift */,
 				5908089628D862C5008E5032 /* FeedVC.swift */,
+				590E9E2128DDE2FF00B1518B /* FeedCell.swift */,
 				59990B8128D8AD3200D70E34 /* UploadVC.swift */,
 				5908089828D862C5008E5032 /* Main.storyboard */,
 				5908089B28D862C7008E5032 /* Assets.xcassets */,
@@ -217,6 +220,7 @@
 				5908089328D862C5008E5032 /* AppDelegate.swift in Sources */,
 				5908089528D862C5008E5032 /* SceneDelegate.swift in Sources */,
 				59990B8428D8AE8200D70E34 /* SignInVC.swift in Sources */,
+				590E9E2228DDE2FF00B1518B /* FeedCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
