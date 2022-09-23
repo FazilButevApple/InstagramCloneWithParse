@@ -90,13 +90,19 @@ class FeedVC: UIViewController , UITableViewDelegate , UITableViewDataSource {
     @objc func getData() {
         
         let query = PFQuery(className: "Posts")
-        
+        query.addDescendingOrder("createdAt")
         query.findObjectsInBackground { (objects,error) in
             
             if error != nil {
                 self.signindelegate.makeAlert(errorTitle: "getData Error", errorMessage: error!.localizedDescription)
                 
             }else {
+                
+                self.postOwnerArray.removeAll()
+                self.postImageArray.removeAll()
+                self.postCommentArray.removeAll()
+                self.postUUIDArray.removeAll()
+                
                 if objects!.count > 0 {
                     for object in objects! {
                         

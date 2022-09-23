@@ -1,0 +1,6 @@
+framework module Pods_InstagramCloneWithParse {
+  umbrella header "Pods-InstagramCloneWithParse-umbrella.h"
+
+  export *
+  module * { export * }
+}
