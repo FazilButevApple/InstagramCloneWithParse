@@ -16,6 +16,7 @@
 		590E9E2228DDE2FF00B1518B /* FeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 590E9E2128DDE2FF00B1518B /* FeedCell.swift */; };
 		59990B8228D8AD3200D70E34 /* UploadVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59990B8128D8AD3200D70E34 /* UploadVC.swift */; };
 		59990B8428D8AE8200D70E34 /* SignInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59990B8328D8AE8200D70E34 /* SignInVC.swift */; };
+		59C4456728E19ED1001313E0 /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59C4456628E19ED1001313E0 /* ProfileVC.swift */; };
 		F5DF1947D6178CD8205D154A /* Pods_InstagramCloneWithParse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65B433D79AA5260E085F5B94 /* Pods_InstagramCloneWithParse.framework */; };
 /* End PBXBuildFile section */
 
@@ -29,8 +30,10 @@
 		5908089E28D862C7008E5032 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		590808A028D862C7008E5032 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		590E9E2128DDE2FF00B1518B /* FeedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCell.swift; sourceTree = "<group>"; };
+		5939D0A428E1850D001F55DC /* InstagramCloneWithParse.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = InstagramCloneWithParse.entitlements; sourceTree = "<group>"; };
 		59990B8128D8AD3200D70E34 /* UploadVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadVC.swift; sourceTree = "<group>"; };
 		59990B8328D8AE8200D70E34 /* SignInVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInVC.swift; sourceTree = "<group>"; };
+		59C4456628E19ED1001313E0 /* ProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileVC.swift; sourceTree = "<group>"; };
 		65B433D79AA5260E085F5B94 /* Pods_InstagramCloneWithParse.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_InstagramCloneWithParse.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		799F64D9371278F6BFDD803C /* Pods-InstagramCloneWithParse.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InstagramCloneWithParse.debug.xcconfig"; path = "Target Support Files/Pods-InstagramCloneWithParse/Pods-InstagramCloneWithParse.debug.xcconfig"; sourceTree = "<group>"; };
 		E9BE4B2E0E9990223A449FE2 /* Pods-InstagramCloneWithParse.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InstagramCloneWithParse.release.xcconfig"; path = "Target Support Files/Pods-InstagramCloneWithParse/Pods-InstagramCloneWithParse.release.xcconfig"; sourceTree = "<group>"; };
@@ -78,6 +81,8 @@
 		5908089128D862C5008E5032 /* InstagramCloneWithParse */ = {
 			isa = PBXGroup;
 			children = (
+				5939D0A428E1850D001F55DC /* InstagramCloneWithParse.entitlements */,
+				59C4456628E19ED1001313E0 /* ProfileVC.swift */,
 				5908089228D862C5008E5032 /* AppDelegate.swift */,
 				5908089428D862C5008E5032 /* SceneDelegate.swift */,
 				59990B8328D8AE8200D70E34 /* SignInVC.swift */,
@@ -217,6 +222,7 @@
 			files = (
 				59990B8228D8AD3200D70E34 /* UploadVC.swift in Sources */,
 				5908089728D862C5008E5032 /* FeedVC.swift in Sources */,
+				59C4456728E19ED1001313E0 /* ProfileVC.swift in Sources */,
 				5908089328D862C5008E5032 /* AppDelegate.swift in Sources */,
 				5908089528D862C5008E5032 /* SceneDelegate.swift in Sources */,
 				59990B8428D8AE8200D70E34 /* SignInVC.swift in Sources */,
@@ -366,10 +372,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = InstagramCloneWithParse/InstagramCloneWithParse.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = InstagramCloneWithParse/Info.plist;
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -394,10 +403,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = InstagramCloneWithParse/InstagramCloneWithParse.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = InstagramCloneWithParse/Info.plist;
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
