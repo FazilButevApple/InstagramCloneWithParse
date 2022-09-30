@@ -51,7 +51,7 @@ class FeedCell: UITableViewCell {
             if error != nil {
                 self.signindelegate.makeAlert(errorTitle: "Like Save Error", errorMessage: error!.localizedDescription)
             }else {
-                
+                print("Like Button Pressed")
                 print("Like Saved")
             }
             
