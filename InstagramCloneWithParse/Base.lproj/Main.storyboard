@@ -12,7 +12,7 @@
         <!--FeedVC-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="FeedVC" customModule="InstagramCloneWithParse" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="FeedVC" id="BYZ-38-t0r" customClass="FeedVC" customModule="InstagramCloneWithParse" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -29,7 +29,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="zjn-bK-5X4">
-                                                    <rect key="frame" x="55" y="42" width="280" height="200"/>
+                                                    <rect key="frame" x="56" y="42" width="278" height="200"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="278" id="Rgj-wT-M1p"/>
                                                         <constraint firstAttribute="height" constant="200" id="WzK-Js-irb"/>
@@ -46,7 +46,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Comment" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lfX-5l-Nnu">
-                                                    <rect key="frame" x="55" y="250" width="280" height="24"/>
+                                                    <rect key="frame" x="56" y="250" width="278" height="24"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="24" id="T4f-mJ-Nlb"/>
                                                     </constraints>
@@ -55,7 +55,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="userUUID" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F4Q-w1-iqZ">
-                                                    <rect key="frame" x="250" y="13" width="85" height="24"/>
+                                                    <rect key="frame" x="249" y="13" width="85" height="24"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -300,11 +300,69 @@
                         <outlet property="profileExplainLbl" destination="Wcp-a8-8Xd" id="dRc-GX-oqg"/>
                         <outlet property="profileImage" destination="uDR-d2-SL8" id="ByS-1x-v7Y"/>
                         <outlet property="usernameLbl" destination="6Uh-g2-8Qx" id="ORJ-la-8La"/>
+                        <segue destination="DUp-6o-ejo" kind="show" identifier="toFollowersVC" id="MwZ-Br-LQa"/>
+                        <segue destination="ePi-rG-tDX" kind="show" identifier="toFollowingVC" id="Khd-52-T0Z"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3eb-Od-5TH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="890.76923076923072" y="1113.9810426540284"/>
+        </scene>
+        <!--FollowersVC-->
+        <scene sceneID="Iie-P0-Hyh">
+            <objects>
+                <viewController id="DUp-6o-ejo" customClass="FollowersVC" customModule="InstagramCloneWithParse" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Muu-4o-26B">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="Ucs-Hi-JOX">
+                                <rect key="frame" x="0.0" y="91" width="390" height="670"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Yv8-e5-coe"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Ucs-Hi-JOX" firstAttribute="leading" secondItem="Yv8-e5-coe" secondAttribute="leading" id="X7o-mF-oe2"/>
+                            <constraint firstItem="Ucs-Hi-JOX" firstAttribute="top" secondItem="Yv8-e5-coe" secondAttribute="top" id="YJJ-3b-sUM"/>
+                            <constraint firstItem="Ucs-Hi-JOX" firstAttribute="centerX" secondItem="Muu-4o-26B" secondAttribute="centerX" id="atl-jV-FMg"/>
+                            <constraint firstItem="Ucs-Hi-JOX" firstAttribute="bottom" secondItem="Yv8-e5-coe" secondAttribute="bottom" id="bUk-l8-uMP"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="FSH-eC-eW0"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cwq-aa-GTD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1657" y="1114"/>
+        </scene>
+        <!--FollowingVC-->
+        <scene sceneID="S4B-pX-sJ6">
+            <objects>
+                <viewController id="ePi-rG-tDX" customClass="FollowingVC" customModule="InstagramCloneWithParse" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="n0n-Ib-7cB">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="N0D-IT-fNQ">
+                                <rect key="frame" x="0.0" y="91" width="390" height="670"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="9s3-UA-kwx"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="N0D-IT-fNQ" firstAttribute="centerX" secondItem="n0n-Ib-7cB" secondAttribute="centerX" id="77E-hP-fqs"/>
+                            <constraint firstItem="N0D-IT-fNQ" firstAttribute="bottom" secondItem="9s3-UA-kwx" secondAttribute="bottom" id="8uF-Uf-5gf"/>
+                            <constraint firstItem="N0D-IT-fNQ" firstAttribute="leading" secondItem="9s3-UA-kwx" secondAttribute="leading" id="jjW-eC-kQ5"/>
+                            <constraint firstItem="N0D-IT-fNQ" firstAttribute="top" secondItem="9s3-UA-kwx" secondAttribute="top" id="qld-VO-OJp"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="bI2-FI-b1j"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fs2-gB-tcm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1657" y="1810"/>
         </scene>
         <!--Sign InVC-->
         <scene sceneID="92x-xU-5hu">

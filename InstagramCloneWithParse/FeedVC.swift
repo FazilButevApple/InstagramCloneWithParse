@@ -39,8 +39,6 @@ class FeedVC: UIViewController , UITableViewDelegate , UITableViewDataSource {
                 cell.postImage.image = UIImage(data: data!)
                 
             }
-            
-            
         }
         
         return cell

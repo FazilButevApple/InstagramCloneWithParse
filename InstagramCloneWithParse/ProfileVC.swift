@@ -8,7 +8,7 @@
 import UIKit
 import Parse
 
-class ProfileVC: UIViewController, UIImagePickerControllerDelegate & UINavigationControllerDelegate {
+class ProfileVC: UIViewController, UIImagePickerControllerDelegate , UINavigationControllerDelegate {
 
     @IBOutlet weak var profileImage: UIImageView!
     @IBOutlet weak var usernameLbl: UILabel!
