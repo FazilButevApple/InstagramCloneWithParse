@@ -37,6 +37,14 @@ class FeedCell: UITableViewCell {
 
     @IBAction func likeButtonClicked(_ sender: Any) {
         
+        let alert = CDAlertView(title: "Awesome Title", message: "Are you in?!", type: .error)
+        let doneAction = CDAlertViewAction(title: "Sure! 💪")
+        alert.add(action: doneAction)
+        let nevermindAction = CDAlertViewAction(title: "Nevermind 😑")
+        alert.add(action: nevermindAction)
+        //alert.isTextFieldHidden = false
+        alert.show()
+        
         let likeObject = PFObject(className: "Likes")
         
         let uuid = UUID().uuidString
