@@ -6,6 +6,8 @@ target 'InstagramCloneWithParse' do
   use_frameworks!
 
 pod 'Parse'
+pod 'CDAlertView'
+
 
   # Pods for InstagramCloneWithParse
 
