@@ -22,10 +22,14 @@ class FeedCell: UITableViewCell {
         userUUIDLbl.isHidden = true
         
         usernameLbl.isUserInteractionEnabled = true
+        postImage.isUserInteractionEnabled = true
+        postImage.clipsToBounds = true
         //let gestureRecognizer = UITapGestureRecognizer(target: self, action: #selector())
         //usernameLbl.addGestureRecognizer(gestureRecognizer)
         
-        
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(doubleTap))
+        tapGesture.numberOfTapsRequired = 2
+        postImage.addGestureRecognizer(tapGesture)
     }
     
     
@@ -34,6 +38,12 @@ class FeedCell: UITableViewCell {
 
         
     }
+    
+    
+    @objc func doubleTap(_ TapGesture: UITapGestureRecognizer) {
+        ExtensionHandler.shared.postLikeHeartAnimation(tapGesture: TapGesture)
+    }
+
 
     @IBAction func likeButtonClicked(_ sender: Any) {
         
