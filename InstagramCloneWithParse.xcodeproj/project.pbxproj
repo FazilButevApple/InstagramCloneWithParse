@@ -24,6 +24,8 @@
 		59CE7A3328E7190C00039541 /* CDAlertViewType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59CE7A3228E7190C00039541 /* CDAlertViewType.swift */; };
 		59CE7A3528E7194900039541 /* ImageHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59CE7A3428E7194900039541 /* ImageHelper.swift */; };
 		59CE7A3728E7199C00039541 /* LayoutConstraintsExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59CE7A3628E7199C00039541 /* LayoutConstraintsExtension.swift */; };
+		59DD877C28EC2EF10033C938 /* PostLikeExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59DD877B28EC2EF10033C938 /* PostLikeExtension.swift */; };
+		59DD877E28EC632C0033C938 /* ExtensionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59DD877D28EC632C0033C938 /* ExtensionHandler.swift */; };
 		F5DF1947D6178CD8205D154A /* Pods_InstagramCloneWithParse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65B433D79AA5260E085F5B94 /* Pods_InstagramCloneWithParse.framework */; };
 /* End PBXBuildFile section */
 
@@ -48,6 +50,8 @@
 		59CE7A3228E7190C00039541 /* CDAlertViewType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CDAlertViewType.swift; sourceTree = "<group>"; };
 		59CE7A3428E7194900039541 /* ImageHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageHelper.swift; sourceTree = "<group>"; };
 		59CE7A3628E7199C00039541 /* LayoutConstraintsExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LayoutConstraintsExtension.swift; sourceTree = "<group>"; };
+		59DD877B28EC2EF10033C938 /* PostLikeExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostLikeExtension.swift; sourceTree = "<group>"; };
+		59DD877D28EC632C0033C938 /* ExtensionHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionHandler.swift; sourceTree = "<group>"; };
 		65B433D79AA5260E085F5B94 /* Pods_InstagramCloneWithParse.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_InstagramCloneWithParse.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		799F64D9371278F6BFDD803C /* Pods-InstagramCloneWithParse.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InstagramCloneWithParse.debug.xcconfig"; path = "Target Support Files/Pods-InstagramCloneWithParse/Pods-InstagramCloneWithParse.debug.xcconfig"; sourceTree = "<group>"; };
 		E9BE4B2E0E9990223A449FE2 /* Pods-InstagramCloneWithParse.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InstagramCloneWithParse.release.xcconfig"; path = "Target Support Files/Pods-InstagramCloneWithParse/Pods-InstagramCloneWithParse.release.xcconfig"; sourceTree = "<group>"; };
@@ -95,6 +99,7 @@
 		5908089128D862C5008E5032 /* InstagramCloneWithParse */ = {
 			isa = PBXGroup;
 			children = (
+				59DD877828EC21770033C938 /* Extensions */,
 				59CE7A2F28E718BF00039541 /* AlertView */,
 				5939D0A428E1850D001F55DC /* InstagramCloneWithParse.entitlements */,
 				5908089228D862C5008E5032 /* AppDelegate.swift */,
@@ -124,6 +129,15 @@
 				59CE7A3628E7199C00039541 /* LayoutConstraintsExtension.swift */,
 			);
 			path = AlertView;
+			sourceTree = "<group>";
+		};
+		59DD877828EC21770033C938 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				59DD877B28EC2EF10033C938 /* PostLikeExtension.swift */,
+				59DD877D28EC632C0033C938 /* ExtensionHandler.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		EED665A736E2553C5F924D66 /* Frameworks */ = {
@@ -257,9 +271,11 @@
 				5908089328D862C5008E5032 /* AppDelegate.swift in Sources */,
 				59CE7A3728E7199C00039541 /* LayoutConstraintsExtension.swift in Sources */,
 				5934232F28E2DF1E00AE6F9F /* FollowingVC.swift in Sources */,
+				59DD877C28EC2EF10033C938 /* PostLikeExtension.swift in Sources */,
 				5908089528D862C5008E5032 /* SceneDelegate.swift in Sources */,
 				59CE7A3528E7194900039541 /* ImageHelper.swift in Sources */,
 				59CE7A3328E7190C00039541 /* CDAlertViewType.swift in Sources */,
+				59DD877E28EC632C0033C938 /* ExtensionHandler.swift in Sources */,
 				59CE7A2E28E7187800039541 /* CDAlertHeaderView.swift in Sources */,
 				59990B8428D8AE8200D70E34 /* SignInVC.swift in Sources */,
 				590E9E2228DDE2FF00B1518B /* FeedCell.swift in Sources */,
