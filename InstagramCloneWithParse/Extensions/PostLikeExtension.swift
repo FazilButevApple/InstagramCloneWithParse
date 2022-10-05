@@ -11,7 +11,7 @@ import UIKit
 
 class PostLikeExtension: UIViewController {
     
-    @objc func didDoubleTap(_ gesture: UITapGestureRecognizer) {
+    @objc func didDoubleTap(_ gesture: UITapGestureRecognizer , title:String) {
         
         guard let gestureView = gesture.view else {return}
         
@@ -41,6 +41,7 @@ class PostLikeExtension: UIViewController {
                         })
                 }
             })
-        print("didDoubleTap active")
+        print(title)
     }
+    
 }

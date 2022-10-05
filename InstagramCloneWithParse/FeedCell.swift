@@ -41,7 +41,9 @@ class FeedCell: UITableViewCell {
     
     
     @objc func doubleTap(_ TapGesture: UITapGestureRecognizer) {
+        
         ExtensionHandler.shared.postLikeHeartAnimation(tapGesture: TapGesture)
+
     }
 
 
