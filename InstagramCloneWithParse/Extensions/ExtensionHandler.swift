@@ -16,7 +16,7 @@ class ExtensionHandler: UIViewController {
         
         let postLike = PostLikeExtension()
         
-        postLike.didDoubleTap(tapGesture)
+        postLike.didDoubleTap(tapGesture, title: "hello")
         
     }
 }
